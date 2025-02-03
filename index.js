@@ -8,9 +8,9 @@ app.listen(5000,()=>{
 })
 app.use(express.json())
 
-// app.get('/',(req,res)=>{
-//     res.send('server started')
-// })
+app.get('/',(req,res)=>{
+    res.send('server started')
+})
 
 mongoose.connect('mongodb+srv://vigneshrao:Vignesh@mycluster.0p0cv.mongodb.net/?retryWrites=true&w=majority&appName=myCluster')
     .then(()=>console.log('DB connected..'))
